@@ -1,0 +1,7 @@
+express:
+    image: 'registry.cn-hangzhou.aliyuncs.com/nodejs_runtime/nodejs_runtime:1.0'
+    expose:
+        - '3000'
+    restart: always
+    labels:
+        aliyun.routing.port_3000: express
