@@ -1,5 +1,6 @@
 FROM node:6.10.0	
 ADD ./ /workspace
+COPY package.json .
+RUN npm i
 EXPOSE 3000
-EXPOSE 22
-ENTRYPOINT ["node","/workspace/app.js"]
+CMD ["npm","start"]
